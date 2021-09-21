@@ -7,6 +7,7 @@ html {
         --h1-text-size:  30pt;
         --primary-font: "Helvetica", sans-serif;
         --header-color: #23e9b7;
+        --button-color: #e922b7;
         --background-color: #e7ffff;
         --text-color: #000000; 
     }
@@ -16,9 +17,37 @@ html {
         background-color: var(--header-color);
         color: var(--text-color);
         font-size: var(--h1-text-size);
+        height: 220px;
+    }
+
+    .button {
+        border: solid;
+        border-color: var(--button-color);
+        border-radius: 5px;
+        height: 15px;
+        width: 40px;
+        padding: 20px;
+    }
+
+    .button:hover {
+        background-color: var(--button-color);
     }
 
     body {
         background-color: var(--background-color);
         color: var(--text-color);
+    }
+
+    .container {
+        width: 500px;
+        padding: 30px;
+    }
+
+    .content {
+        color: (--text-color);
+        font-style: var(--primary-font);
+    }
+
+    .image {
+        width: 500px;
     }
