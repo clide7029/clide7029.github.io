@@ -4,10 +4,13 @@ html {
 
 
     :root {
-        --h1-text-size:  30pt;
+        --h1-size: 30pt;
+        --h2-size: 20pt;
+        --h3-size: 18pt; 
         --primary-font: "Helvetica", sans-serif;
         --blue: #23e9b7;
         --pink: #e922b7;
+        --purple: #8528bb;
         --white: #e7ffff;
         --black: #000000; 
     }
@@ -16,7 +19,8 @@ html {
     header {
         background-color: var(--blue);
         color: var(--black);
-        font-size: var(--h1-text-size);
+        text-align: center;
+        font-size: var(--h1-size);
         margin-left: auto;
         margin-right: auto;
         height: 220px;
@@ -24,10 +28,21 @@ html {
     }
 
     h1 {
-            color: var(--pink);
-            text-align: center;
+        color: var(--pink);
+        font-size: var(--h1-size);
         }
-        
+
+    h2 {
+        color: var(--pink);
+        font-size: var(--h2-size);
+        text-align: center;
+        }
+
+    h3 {
+        color: var(--purple);
+        font-size: var(--h3-size);
+        text-align: center;
+        }
 
     .button {
         border: solid;
@@ -35,7 +50,7 @@ html {
         border-radius: 5px;
         height: 15px;
         width: 40px;
-        padding: 20px;
+        padding: 18px;
     }
 
     .button:hover {
@@ -54,14 +69,21 @@ html {
         margin-right: auto;
     }
 
+    .img-text {
+        text-align: center;
+        display: inline-block;
+        padding: 5px;
+    }
+
     .content {
         text-align: center;
+        padding: 5px;
     }
 
     img {
         border-radius: 5px;
         width: 150px;
-        display: block;
+        float: left;
         margin-left: auto;
         margin-right: auto;
     }
