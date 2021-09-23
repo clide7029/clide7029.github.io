@@ -6,23 +6,26 @@ html {
     :root {
         --h1-text-size:  30pt;
         --primary-font: "Helvetica", sans-serif;
-        --header-color: #23e9b7;
-        --button-color: #e922b7;
-        --background-color: #e7ffff;
-        --text-color: #000000; 
+        --blue: #23e9b7;
+        --pink: #e922b7;
+        --white: #e7ffff;
+        --black: #000000; 
     }
 
 
     header {
-        background-color: var(--header-color);
-        color: var(--text-color);
+        background-color: var(--blue);
+        color: var(--black);
         font-size: var(--h1-text-size);
+        margin-left: auto;
+        margin-right: auto;
         height: 220px;
+
     }
 
     .button {
         border: solid;
-        border-color: var(--button-color);
+        border-color: var(--pink);
         border-radius: 5px;
         height: 15px;
         width: 40px;
@@ -30,25 +33,32 @@ html {
     }
 
     .button:hover {
-        background-color: var(--button-color);
+        background-color: var(--pink);
     }
 
     body {
-        background-color: var(--background-color);
-        color: var(--text-color);
+        background-color: var(--white);
+        color: var(--black);
     }
 
     .container {
         width: 500px;
         padding: 30px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     #content {
-        color: (--text-color);
+        color: (--black);
         font-style: var(--primary-font);
     }
 
     img {
         border-radius: 5px;
         width: 150px;
+    }
+
+    h1 {
+        color: var(--pink);
+        text-align: center;
     }
