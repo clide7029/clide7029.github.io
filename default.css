@@ -43,11 +43,12 @@ html {
         padding: 30px;
     }
 
-    .content {
+    #content {
         color: (--text-color);
         font-style: var(--primary-font);
     }
 
-    .image {
-        width: 500px;
+    img {
+        border-radius: 5px;
+        width: 150px;
     }
